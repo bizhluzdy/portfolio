@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Plants Online</title>
+    <link rel="icon" type="image/x-icon" href="../../assets/icons/plants_header_ico.svg">
+</head>
+<body id="onees">
+    <header class="header">
+        <div class="wrapper wrap_head">
+            <a href="../landing/index.html" class="logo">
+                <img src="../../assets/icons/plants_header_ico.svg" class="logot" alt="plant">
+                <p class="title">Plants</p>
+            </a>
+            <div class="nav_bar">
+                <nav class="navigation">
+                    <ul class="navigation">
+                        <li class="header_item">
+                            <a href="#onees" class="link">Home</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#first" class="link">About us</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#second" class="link">Service</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#thrid" class="link">Price</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#four" class="link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="burger-menu">
+                <input id="click_menu" type="checkbox">
+                <label for="click_menu" class="menu-logo" onclick="wind()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <ul class="menu-box">
+                    <li class="mbox xbox" onclick="wind()"><a  href="#onees" class="link" onclick="getElementById('click_menu').checked = false; " >Home</a></li>
+                    <li class="mbox" onclick="wind()"><a href="#first" class="link" onclick="getElementById('click_menu').checked = false; " >About us</a></li>
+                    <li class="mbox" onclick="wind()"><a href="#second" class="link" onclick="getElementById('click_menu').checked = false; " >Service</a></li>
+                    <li class="mbox" onclick="wind()"><a href="#thrid" class="link" onclick="getElementById('click_menu').checked = false; " >Price</a></li>
+                    <li class="mbox" onclick="wind()"><a href="#four" class="link" onclick="getElementById('click_menu').checked = false; " >Contacts</a></li>
+                </ul>
+                <input id="back" type="button" onclick="getElementById('click_menu').checked = false; ">
+                <label for="back" class="backg">
+                    <div onclick="wind()"></div>
+                </label>
+            </div>
+            
+        </div>
+    </header>
+    <main class="main">
+        <section class="welcome">
+            <div class="wrapper grow">
+                <img src="../../assets/images/leafs.png" alt="leafs" class="leafs">
+                <div class="textblock">
+                    <h1 class="grow_title">We grow <span class="plants">plants</span> and give you oxygen</h1>
+                    <p class="grow_p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <button class="learn" onclick="check()">LEARN MORE</button>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="first">
+            <div class="wrapper sec2">
+                <div class="prof_text">
+                    <h2 class="title_two">We are <span class="proexp">professional experienced</span> gardeners</h2>
+                    <p class="pro_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                </div>
+                <img src="../../assets/images/houseplant1.png" alt="houseplant" class="houseplant">
+            </div>
+        </section>
+        <section class="service" id="second">
+            <div class="wrapper ourhub">
+                <h2 class="our_title">Service and our projects</h2>
+                <div class="buttons">
+                    <input type='checkbox' id="one" class="che" onchange="fun1()">
+                    <label for="one" class="ourbut">Gardens</label>
+                    <input type='checkbox' id="two" class="che" onchange="fun1()">
+                    <label for="two" class="ourbut">Lawn</label>
+                    <input type='checkbox' id="three" class="che" onchange="fun1()">
+                    <label for="three" class="ourbut">Planting</label>
+                </div>
+            </div>
+            <div class="wrapper cards">
+                <div class="card cardd Garden">
+                    <img src="../../assets/images/1tab.png" alt="Garden care" class="card_imgs">
+                    <img src="../../assets/images/first.png" alt="Garden care" class="card_img">
+                    <div class="textarea">
+                        <h3 class="card_title">Garden care</h3>
+                        <p class="card_discription">Lorem Ipsum has been the industry</p>
+                    </div>
+                </div> 
+                <div class="card cardd Planting">
+                    <img src="../../assets/images/2tab.png" alt="Planting" class="card_imgs">
+                    <img src="../../assets/images/second.png" alt="Planting" class="card_img">
+                    <div class="textarea">
+                        <h3 class="card_title">Planting</h3>
+                        <p class="card_discription">Lorem Ipsum has been the industry</p>
+                    </div>
+                </div>
+                <div class="card cardd Lawn">
+                    <img src="../../assets/images/3tab.png" alt="Lawn care" class="card_imgs">
+                    <img src="../../assets/images/third.png" alt="Lawn care" class="card_img">
+                    <div class="textarea">
+                        <h3 class="card_title">Lawn care</h3>
+                        <p class="card_discription">Lorem Ipsum has been the industry</p>
+                    </div>
+                </div>
+                <div class="card cardd Planting">
+                    <img src="../../assets/images/4tab.png" alt="Planting" class="card_imgs">
+                    <img src="../../assets/images/4.png" alt="Planting" class="card_img">
+                    <div class="textarea">
+                        <h3 class="card_title">Planting</h3>
+                        <p class="card_discription">Lorem Ipsum has been the industry</p>
+                    </div>
+                </div>
+                <div class="card cardd Garden">
+                    <img src="../../assets/images/5tab.png" alt="Garden care" class="card_imgs">
+                    <img src="../../assets/images/5.png" alt="Garden care" class="card_img">
+                    <div class="textarea">
+                        <h3 class="card_title">Garden care</h3>
+                        <p class="card_discription">Lorem Ipsum has been the industry</p>
+                    </div>
+                </div>
+                <div class="card cardd Planting">
+                    <img src="../../assets/images/6tab.png" alt="Planting" class="card_imgs" id=>
+                    <img src="../../assets/images/6.png" alt="Planting" class="card_img">
+                    <div class="textarea">
+                        <h3 class="card_title">Planting</h3>
+                        <p class="card_discription">Lorem Ipsum has been the industry</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prices" id="thrid">
+            <div class="wrapper odgrid">
+                <div class="flextwo">
+                    <div class="wrappo">
+                        <h2 class="hprices">Prices</h2>
+                        <div class="prices_accourdion">
+                            <div class="drop">
+                                <button class="bracked" id="op1" onclick="dropDown1()">Basics<span class="circle" id="ci1"><span class="ar-2" id="ar1"></span><span class="ar-3" id="ar2"></span></span>
+                                </button>
+                                <div class="open" id="or1">
+                                    <p class="subtext" id="sub1">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="per" id="per1"><span class="dollar">$</span><span class="count">15</span> / per hour</p>
+                                    <a href="#four"><button class="order">Order</button></a>
+                                </div>
+                            </div>
+                            <div class="drop">
+                                <button class="bracked" id="op2" onclick="dropDown2()">Standard<span class="circle" id="ci2"><span class="ar-2" id="ar3"></span><span class="ar-3" id="ar4"></span></span>
+                                </button>
+                                <div class="open" id="or2">
+                                    <p class="subtext" id="sub2">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="per" id="per2"><span class="dollar">$</span><span class="count">25</span> / per hour</p>
+                                    <a href="#four"><button class="order">Order</button></a>
+                                </div>
+                            </div>
+                            <div class="drop">
+                                <button class="bracked" id="op3" onclick="dropDown3()">Pro care <span class="circle" id="ci3"><span class="ar-2" id="ar5"></span><span class="ar-3" id="ar6"></span></span>
+                                </button>
+                                <div class="open" id="or3">
+                                    <p class="subtext" id="sub3">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="per" id="per3"><span class="dollar">$</span><span class="count">35</span> / per hour</p>
+                                    <a href="#four"><button class="order">Order</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conta">
+                        <p class="pprices">Our best <span class="plants">gardeners</span> are ready to help you</p>
+                        <button class="contact">Contact us</button>
+                        <img src="../../assets/images/leafs_small.png" alt="leafs" class="abe">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="four">
+            <div class="wrapper sus">
+                <img src="../../assets/images/contact_woman1.png" alt="contwom" class="contow">
+                <h2 class="titlesus">Contact us</h2>
+                <div class="aada">
+                    <button onclick="cityDown()" class="acc2" id="dropci"><p id="cit">City</p>
+                            <span class="circlesa" id="ci4"><span class="ar-2" id="ar7"></span><span class="ar-3" id="ar8"></span></span>
+                    </button>
+                    <div class="drop--con" id="dropper">
+                        <ul class="drop-up remove">
+                            <li class="cities " onclick="cityDown1()" id='ca'>Canandaigua, NY</li>
+                            <li class="cities " onclick="cityDown2()" id="ny">New York City</li>
+                            <li class="cities " onclick="cityDown3()" id="yo">Yonkers, NY</li>
+                            <li class="cities " onclick="cityDown4()" id="sh">Sherrill, NY</li>
+                        </ul>
+                    </div>
+                    <div class="adresses">
+                        <div class="ad_flex">
+                            <div>
+                                <p class="ad_tite">City:</p>
+                                <p class="ad_tite">Phone:</p>
+                                <p class="ad_tite">Office adress:</p>
+                            </div>
+                            <div>
+                                <p class="ad_texte" id="city"></p>
+                                <p class="ad_texte" id="phone"></p>
+                                <p class="ad_texte" id="office"></p>
+                            </div>
+                        </div>
+                            <a id="tel" href="">Call us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper fot">
+            <div class="info">
+                <p class="fotp">©</p>
+                <p class="fotp">2022</p>
+                <a href="https://github.com/bizhluzdy" class="fotp">github</a>
+            </div>
+            <a href="https://rs.school/js-stage0/" class="rs">Rolling Scopes School</a>
+            <div class="soc">
+                <ul class="fotul">
+                    <li class="fotli">
+                        <a href="https://www.instagram.com/" class="fota">
+                            <img src="../../assets/icons/inst1.svg" alt="instagram" class="fotimg">
+                        </a>
+                    </li>
+                    <li class="fotli">
+                        <a href="https://www.facebook.com/" class="fota">
+                            <img src="../../assets/icons/fb1.svg" alt="facebook" class="fotimg">
+                        </a>
+                    </li>
+                    <li class="fotli">
+                        <a href="https://twitter.com/" class="fota">
+                            <img src="../../assets/icons/tw1.svg" alt="twitter" class="fotimg">
+                        </a>
+                    </li>
+                    <li class="fotli">
+                        <a href="https://pinterest.com/" class="fota">
+                            <img src="../../assets/icons/pinterest1.svg" alt="pinterest" class="fotimg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../../pages/landing/script.js"></script>
+</body>
+</html>
