@@ -19,6 +19,8 @@ The development was carried out in three stages:
 
 - *the addition of JavaScript logic.*
 
+----
+
 ### (PL) PLANTS | jednostronicowa witryna
 Linki:
 [project deploy link](https://bizhluzdy.github.io/portfolio/plants/plants/pages/landing/index.html) |
