@@ -1,0 +1,526 @@
+html{
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    user-select: none;
+}
+p{
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 0;
+}
+/* main screen */
+
+.body{
+    max-width: max-content;
+    margin: 0 auto;
+    height: 100vh;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(../assets/img/download.png) repeat;
+    background-size: 60px;
+    animation: waterfall 200s linear infinite;
+}
+@keyframes waterfall{
+    100% {
+        background-position: -400% 400%;
+    }
+  }
+  @keyframes night{
+    100% {
+        background-position: 400% 200%;
+    }
+  }
+.main{
+    border: 4px solid black;
+    padding: 20px;
+    min-width: 242px;
+    background: lightgrey;
+    min-height: 10px;
+}
+.title{
+    text-align: center;
+    max-width: max-content;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+.nav-list,
+.setting-list{
+    padding: 0;
+    margin: 0;
+}
+.nav-list__item,
+.setting-list__item{
+    max-width: max-content;
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+}
+.nav-list__item{
+    cursor: pointer;
+}
+
+.nav-list__item:hover{
+    list-style-image: url(../assets/img/littlebomb.png);
+}
+.nav-list__item:not(:last-child){
+    margin-bottom: 15px;
+}
+.link-list__rs{
+    width: 90px;
+    height: 25px;  
+}
+.link-list__git{
+    height: 25px;  
+}
+.link-list{
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* settings */
+input[type="radio"] {
+    appearance: none;
+    width: 0px;
+    height: 15px;
+    position: relative;
+    border: none;
+    outline: none;
+    display: none;
+    visibility: hidden;
+  }
+  
+  input[type="radio"]::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: url(../assets/img/littlebomb.png) no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+    visibility: hidden;
+    margin-left: -6px;
+  }
+  
+  input[type="radio"]:checked,
+  input[type="radio"]:checked::before {
+    visibility: visible;
+  }
+  input[type="radio"]:checked{
+    display: inline-block;
+  }
+  
+.setting-list__item{
+    max-width: 225px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.setting-list__item:not(:last-child){
+    margin-bottom: 15px;
+}
+.setting-list__item:hover{
+    list-style-image: url(../assets/img/littlebomb.png);
+}
+.setting-list__item > input,
+.setting-list__item > div{
+    margin-top: 7px;
+}
+.setting-list__item label:hover{
+    cursor: pointer;
+}
+input[type=range]  {
+    width: 170px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    overflow: hidden;
+    height: 7px;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 7px;
+    background-color: darkgray;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    background: black;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    -webkit-appearance: none;
+    margin-top: -4px;
+    box-shadow: -200px  0 0 200px  gray;
+
+  }
+
+  input[type=range]::-moz-range-track {
+      height: 7px;
+      background-color: black;
+  }
+
+
+ input[type=range]::-moz-range-thumb {
+    background: black;
+    cursor: pointer;
+    height: 7px;
+    border-radius:0px;
+    box-shadow: -200px  0px 0px 200px   gray;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .setting-list__item > p{
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .setting-list > p{
+    max-width: 242px;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .difficulty{
+    padding: 5px;
+    border: 3px solid black;
+  }
+  .difficulty:hover{
+    padding: 5px;
+    background: black;
+    color: white;
+  }
+  input[type="radio"]:checked + .difficulty{
+    background: black;
+    color: white;
+  }
+  #easy:checked,
+  #normal:checked,
+  #hard:checked{
+    background: white;
+  }
+  .back{
+    margin-top: 35px;
+  }
+  #easy:checked::before,
+  #normal:checked::before,
+  #hard:checked::before{
+    display: none;
+  }
+  #easy:checked,
+  #normal:checked,
+  #hard:checked{
+    display: none;
+  }
+  .diff-block{
+    display: flex;
+    gap: 1px;
+  }
+
+  .custom-game{
+    margin-top: 20px;
+  }
+  #play{
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  #play:hover::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: url(../assets/img/littlebomb.png) no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: -20px;
+  }
+  #play:disabled{
+    cursor: default;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  #play:disabled:hover::before{
+    visibility: hidden;
+  }
+  #widthtVal,
+  #heightVal,
+  #bombVal{
+    width: 20px;
+    height: 20px;
+    background: black;
+    font-size: 7px;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+  }
+  #bombVal{
+    background: red;
+  }
+  #fieldW,
+  #fieldM,
+  #fieldH{
+    width: 150px;
+  }
+
+  #username{
+    padding: 5px;
+    border: 3px solid black;
+    background: none;
+    width: 180px;
+    outline: none;
+    text-align: center;
+  }
+
+
+  .table-ceil{
+    width: 20px;
+    background: lightgray;
+    border: 3px gray solid;
+    border-top: white 3px solid;
+    border-left: white 3px solid;
+    box-sizing: border-box; 
+    margin: 0;
+    flex-grow: 1;
+    padding: 0;
+    aspect-ratio: 1/1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  table{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    border-spacing: 0;
+    margin: 0 auto;
+    border: 3px solid black;
+  }
+  tr{
+    display: flex;
+  }
+
+  .disrc{
+    color: darkgrey;
+    font-size: 11px;
+  }
+  #exit{
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .game-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .open{
+    background: rgb(190, 190, 190);
+    border: 3px solid rgb(190, 190, 190);
+  }
+  .game-title{
+    margin-bottom: 15px;
+  }
+  #push-here{
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .flag{
+    background-image: url(../assets/img/redflag.png);
+    background-size: cover;
+  }
+
+  .info-wrapper:last-child{
+    margin-left: 10px;
+  }
+  .bomb.open {
+    background-image: url(../assets/img/download.png);
+    background-color: red;
+    border: 3px solid red;
+    background-size: cover;
+  }
+  .open-deff{
+    background-image: url(../assets/img/download.png);
+    background-color: rgb(190, 190, 190);
+    border: 3px solid rgb(190, 190, 190);
+    background-size: cover;
+  }
+  .hidden{
+    visibility: hidden;
+  }
+  .open .hidden {
+    visibility: visible;
+  }
+  .setting-list__item.result{
+    margin-bottom: 2px;
+    border-bottom: 2px black solid;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 10px;
+  }
+
+  .result > div:first-child{
+    text-align: center;
+  }
+  .popup-shadow{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    opacity: 0.35;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    min-width: 200px;
+    background-color: darkgray;
+    border: 4px solid black;
+    padding: 25px;
+  }
+  .victory{
+    text-align: center;
+  }
+  .setting-list__item.result{
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    border-bottom: 3px black solid;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 10px;
+  }
+  .result ~ .back{
+    margin-top: 20px;
+  }
+
+  .size,
+  .bombss,
+  .timer{
+    color: rgba(0, 0, 0, 0.586);
+  }
+
+
+  .body.dark-theme{
+    background: url(../assets/img/nightsky.png) repeat;
+    animation: night 200s linear infinite;
+  }
+  .main.dark-theme{
+    border: 4px solid #96969699;
+    padding: 20px;
+    min-width: 242px;
+    background: rgba(50, 50, 50, 0.8);
+    min-height: 10px;
+    color: rgb(150, 150, 150);
+  }
+  .nav-list__item.dark-theme:hover{
+    list-style-image: url(../assets/img/moon.png);
+  }
+  input[type="radio"].dark-theme::before{
+    background: url(../assets/img/moon.png) no-repeat center;
+  }
+  input[type=range].dark-theme::-webkit-slider-thumb {
+    background: rgb(169, 169, 169);
+    box-shadow: -200px  0 0 200px  rgb(81, 81, 81);
+  }
+  input[type=range].dark-theme::-webkit-slider-runnable-track {
+    background-color: rgb(103, 103, 103);
+  }
+  .setting-list__item.result.dark-theme{
+    border-bottom: 3px rgb(150, 150, 150) solid;
+  }
+  .size.dark-theme,
+  .bombss.dark-theme,
+  .timer.dark-theme{
+    color: rgb(150, 150, 150);
+  }
+  .popup{
+    color: black;
+  }
+  .link-list__git.dark-theme{
+    width: 25px;
+    height: 25px;
+  }
+  .link-list__rs.dark-theme{
+    width: 70px;
+    height: 25px;
+    margin-left: 17.5px;
+  }
+  .difficulty.dark-theme{
+    border: 3px solid rgba(150,150,150,0.6);
+  }
+  .difficulty:hover.dark-theme{
+    background:  rgba(150,150,150,0.6);
+  }
+  input[type="radio"]:checked + .difficulty.dark-theme{
+    background:  rgba(150,150,150,0.6);
+  }
+  #username.dark-theme{
+    border: 3px solid rgba(150,150,150,0.6);
+    color: rgb(150, 150, 150);
+  }
+  #play.dark-theme{
+    color: rgb(150, 150, 150);
+  }
+  #play.dark-theme:hover::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: url(../assets/img/moon.png) no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: -20px;
+  }
+  #play.dark-theme:disabled{
+    cursor: default;
+    color: rgba(150, 150, 150, 0.4);
+  }
+  #widthtVal.dark-theme,
+  #heightVal.dark-theme{
+    background-color: rgb(169, 169, 169);
+    color: black;
+  }
+  .disrc.dark-theme{
+    color: rgba(150, 150, 150, 0.401);
+  }
+  .table-ceil.dark-theme{
+    opacity: 0.4;
+  }
+
+  table.dark-theme{
+    border: 3px solid rgba(150,150,150,0.6);
+  }
+  .bomb.open.dark-theme {
+    background-image: url(../assets/img/moon.png);
+  }
+  .open-deff.dark-theme{
+    background-image: url(../assets/img/moon.png);
+  }
+
+  .popup.dark-theme{
+    border: 4px solid rgba(150,150,150,0.6);
+    background: rgba(50, 50, 50, 0.8);
+    color: rgb(150, 150, 150);
+  }
+  .nav-list.dark-theme > .result-game:hover{
+    list-style-image: url(../assets/img/moon.png);
+  }
