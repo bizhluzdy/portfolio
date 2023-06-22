@@ -19,6 +19,8 @@ The development was carried out in three stages:
 
 - *the addition of JavaScript logic (popup, pagination, slider).*
 
+----
+
 ### (PL) SHELTER | strona schroniska dla zwierząt
 Linki:
 [project deploy link](https://bizhluzdy.github.io/portfolio/shelter/main-page/index.html) |
