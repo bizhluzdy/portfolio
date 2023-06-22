@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy House - Our pets</title>
+    <link rel="shortcut icon" href="../assets/images/ico/icon-collars-leashes.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../main-page/normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <a class="logo-block" href="../main-page/index.html">
+                <h1>Cozy House</h1>
+                <p>Shelter for pets in Boston</p>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../main-page/index.html">About the shelter</a></li>
+                    <li><a class="active">Our pets</a></li>
+                    <li><a href="../main-page/index.html#help">Help the shelter</a></li>
+                    <li><a href="#footer">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <input type="checkbox" id="click_menu">
+                <label for="click_menu" class="burger-ico" onclick="document.querySelector('html').classList.toggle('scroll');">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <div class="burger-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="../main-page/index.html">About the shelter</a></li>
+                            <li><a class="active" onclick="document.getElementById('click_menu').checked = false;document.querySelector('html').classList.toggle('scroll');">Our pets</a></li>
+                            <li><a href="../main-page/index.html#help" onclick="document.getElementById('click_menu').checked = false;document.querySelector('html').classList.toggle('scroll');">Help the shelter</a></li>
+                            <li><a href="#footer" onclick="document.getElementById('click_menu').checked = false;document.querySelector('html').classList.toggle('scroll');">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <label for="click_menu" class="hidden" onclick="document.querySelector('html').classList.toggle('scroll');"></label>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Our friends who<br>are looking for a house</h2>
+        <div class="slide-block">
+            <div class="cards">
+                <div class="card">
+                    <img src="../assets/images/png/pets-katrine.png" alt="Katrine">
+                    <p class="pet-name">Katrine</p>
+                    <button>Learn more</button>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/png/pets-jennifer.png" alt="Katrine">
+                    <p class="pet-name">Jennifer</p>
+                    <button>Learn more</button>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/png/pets-woody.png" alt="Katrine">
+                    <p class="pet-name">Woody</p>
+                    <button>Learn more</button>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/png/pets-sophia.png" alt="Katrine">
+                    <p class="pet-name">Sophia</p>
+                    <button>Learn more</button>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/png/pets-timmy.png" alt="Katrine">
+                    <p class="pet-name">Timmy</p>
+                    <button>Learn more</button>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/png/pets-charly.png" alt="Katrine">
+                    <p class="pet-name">Charly</p>
+                    <button>Learn more</button>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/png/pets-scarlet.png" alt="Katrine">
+                    <p class="pet-name">Scarlett</p>
+                    <button>Learn more</button>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/png/pets-freddie.png" alt="Katrine">
+                    <p class="pet-name">Freddie</p>
+                    <button>Learn more</button>
+                </div>
+            </div>
+            <div class="slider">
+                <button id="dbb" disabled="disabled" onclick="paginationStart()">&lt;&lt;</button>
+                <button id="db" disabled="disabled" onclick="paginationBack()">&lt;</button>
+                <button id="pages">1</button>
+                <button id="bd" onclick="paginationNext()">></button>
+                <button id="bbd" onclick="paginationFinish()">>></button>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footer-nav wrapper">
+            <div class="footer-nav_column">
+                <h2 class="footer-title">For questions and suggestions</h2>
+                <a href="mailto:email@shelter.com" class="column-info">
+                    <img src="../assets/images/ico/icon-email.svg" alt="email@shelter.com">
+                    <p>email@shelter.com</p>
+                </a>
+                <a href="tel:+136745677554" class="column-info">
+                    <img src="../assets/images/ico/icon-phone.svg" alt="+136745677554">
+                    <p>+13 674 567 75 54</p>
+                </a>
+            </div>
+            <div class="footer-nav_column">
+                <h2 class="footer-title">We are waiting for your visit</h2>
+                <a target="_blank" href="https://www.google.com/maps/place/1+Centre+St,+Boston,+MA+02119,+%D0%A1%D0%A8%D0%90/@42.3300627,-71.0964875,17z/data=!3m1!4b1!4m10!1m2!2m1!1s1+Central+Street,+Boston!3m6!1s0x89e37a260516d22d:0x67663c18c6a54ce9!8m2!3d42.3300628!4d-71.0920028!15sChgxIENlbnRyYWwgU3RyZWV0LCBCb3N0b26SARBnZW9jb2RlZF9hZGRyZXNz4AEA!16s%2Fg%2F11td12jd0m" class="column-info">
+                    <img src="../assets/images/ico/icon-marker.svg" alt="1 Central Street, Boston">
+                    <p>1 Central Street, Boston (entrance from the store)</p>
+                </a>
+                <a target="_blank" href="https://www.google.com/maps/place/South+Park+Court,+18+S+Park+Rd,+London+SW19+8TD,+%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F/@51.4202191,-0.2046367,17z/data=!4m6!3m5!1s0x487608baa7401b31:0x873a95ca58e122b2!8m2!3d51.4202192!4d-0.200152!16s%2Fg%2F11c1z48z8w" class="column-info">
+                    <img src="../assets/images/ico/icon-marker.svg" alt="+18 South Park, London ">
+                    <p>18 South Park, London </p>
+                </a>
+            </div>
+            <img src="../assets/images/png/footer-puppy.png" alt="puppy">
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
