@@ -9,6 +9,8 @@ Links:
 
 The project is a virtual keyboard developed on technologies such as **HTML CSS** and **Javascript**. The bundle is built by the **Webpack** project builder for code quality control using **Eslint**. There is a generation of **DOM** tree elements, as well as interaction with it. Implemented saving the state of the keyboard layout using **localStorage**.
 
+----
+
 ### (PL) Klawiatura wirtualna 
 Linki:
 [project deploy link](https://bizhluzdy.github.io/portfolio/virtualkeyboard/) |
