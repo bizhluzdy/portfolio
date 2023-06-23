@@ -48,7 +48,7 @@ The project is a one-page site developed on technologies such as **HTML CSS** an
 
 - **My Codewars:** [click me](https://www.codewars.com/users/rsschool_2af18734ac9d1db3)
 
-- **TypeScript Project - NewsApi** *(The is a simple project for searching and retrieving news from around the web. Html generation with Javascript, use of OOP, project modularity, webpack, linter.)*: [click me](https://github.com/rolling-scopes-school/bizhluzdy-JSFE2023Q1/tree/migration-newip-to-ts)
+- **TypeScript Project - NewsApi** *(The is a simple project for searching and retrieving news from around the web. Html generation with Javascript, use of OOP, project modularity, webpack, linter.)*: [click me](https://github.com/bizhluzdy/portfolio/tree/migration-to-ts)
 
 - **My Node.js experience** *(project - creating a project builder, compiling files divided into modules)*: [click me](https://github.com/bizhluzdy/HTML-builder/tree/main/06-build-page)
 
